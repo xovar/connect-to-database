@@ -20,7 +20,7 @@
 
          <!-- form -->
          <div class="form-section">
-            <form action="">
+            <form id="form" action="">
                 <div class="form-header">
                     <h1>Submit Your voice message</h1>
                 </div>
@@ -29,31 +29,47 @@
                     <div class="form-group">
                         <label class="form-label" for="name">Your Name</label> <br>
                         <input class="form-input" type="text">
+                        <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <div class="">This field is requierd.</div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="name">Email</label> <br>
                         <input class="form-input" type="email">
+                        <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <div class="">This field is requierd.</div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="name">Your Order Number</label> <br>
                         <input class="form-input" type="text">
+                        <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <div class="">This field is requierd.</div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-body">
                     <div class="form-group">
-                        <label class="form-label" for="name">Your Order Number</label> <br>
+                        <label class="form-label" for="name">Purchase from</label> <br>
                         <select placeholder="Please select" name="" class="form-input">
-                            <option value="Please Select">Please Select</option>
+                            <option value="Please Select" selected disabled>Please Select</option>
                             <option value="Amazon">Amazon</option>
                             <option value="ebay">ebay</option>
                             <option value="Uniqcon.com">Uniqcon.com</option>
                             <option value="Gmarket / 1st / Naver">Gmarket / 1st / Naver</option>
                             <option value="Shopee">Shopee</option>
                         </select>
+                        <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <div class="">This field is requierd.</div>
+                        </div>
                     </div>
                 </div>
                 <div class="img-placeholder">
@@ -63,6 +79,10 @@
                     <div class="form-group">
                         <label class="form-label" for="name">Enter Text message</label> <br>
                         <input class="form-input" type="text">
+                        <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <div class="">This field is requierd.</div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-body">
@@ -76,6 +96,10 @@
                                 <p>Drag and drop files here</p>
                             </div>
                             <input type="file">
+                            <div class="error">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <div class="">This field is requierd.</div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -91,9 +115,16 @@
                                 <p>Drag and drop files here</p>
                             </div>
                             <input type="file">
+                            <div class="error">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <div class="">This field is requierd.</div>
+                            </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="form-footer">
+                    <button type="submit" class="btn-footer">Submit</button>
                 </div>
             </form>
          </div>

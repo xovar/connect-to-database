@@ -111,7 +111,7 @@
     width: 100%;
     cursor: pointer;
     background-color: white;
-    border: 1px dotted rgba(201, 97, 0, 0.77);
+    border: 2px dotted rgba(201, 97, 0, 0.77);
     border-radius: 2px;
     display: block;
 }
@@ -149,4 +149,38 @@
 .file-input-content p{
     color: orange;
     font-size: 16px;
+}
+
+.form-footer{
+    color: white;
+    padding: 40px 52px;
+    border-top: 1px solid white;
+}
+
+.form-footer .btn-footer{
+    width: 180px;
+    height: 48px;
+    color: #ffffff;
+    background: #894200;
+    padding: 1px 6px;
+    font-size: 16px;
+}
+
+.error-show ~ .error{
+    width: 155px;
+    height: 21px;
+    background-color: #f23a3c;
+    border-radius: 4px;
+    color: white;
+    margin-top: 8px;
+    line-height: 21px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.error{
+    display: none;
 }
