@@ -11,7 +11,7 @@ body{
 
 .main{
     width: 100%;
-    background: url(./sunset-hair.jpg);
+    background: url(../images/sunset-hair.jpg);
     background-size: cover;
     background-repeat: repeat-y;
 }
@@ -24,7 +24,7 @@ body{
 .header .logo{
     width: 416px;
     height: 140px;
-    background-image: url(./uniqicon\ with\ new\ slogan\ 2\ no\ bg.63079eab03a4d9.22381436.png);
+    background-image: url(../images/uniqicon\ with\ new\ slogan\ 2\ no\ bg.63079eab03a4d9.22381436.png);
     background-size: contain;
     margin-top: 5px;
     background-repeat: no-repeat;

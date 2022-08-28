@@ -1,5 +1,11 @@
+<?php
+    $conn = mysqli_connect("localhost", "root", "", "test") or die("Connection Failed");
+    $error = false;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <section class="main">
         <!-- header -->
-         <div class="header">
+        <div class="header">
             <div class="logo"></div>
-         </div>
+        </div>
 
-         <!-- form -->
-         <div class="form-section">
-            <form id="form" action="">
+        <!-- form -->
+        <div class="form-section">
+            <form id="form" method="post" action="./assets/php/updateData.php">
                 <div class="form-header">
                     <h1>Submit Your voice message</h1>
                 </div>
@@ -73,7 +80,7 @@
                     </div>
                 </div>
                 <div class="img-placeholder">
-                    <img src="./image_placeholder.png" alt="">
+                    <img src="./assets/images/image_placeholder.png" alt="">
                 </div>
                 <div class="form-body">
                     <div class="form-group">
@@ -87,19 +94,19 @@
                 </div>
                 <div class="form-body">
                     <div class="form-group">
-                        <label class="form-label" >Upload</label> <br>
+                        <label class="form-label">Upload</label> <br>
                         <div class="upload">
                             <div class="btn-warning">
-                            <div class="file-input-content">
-                                <i class="fa-solid fa-cloud-arrow-up"></i>
-                                <h1>Browse Files</h1>
-                                <p>Drag and drop files here</p>
-                            </div>
-                            <input name="img" type="file" required>
-                            <div class="error">
-                                <i class="fa-solid fa-circle-exclamation"></i>
-                                <div class="">This field is required.</div>
-                            </div>
+                                <div class="file-input-content">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    <h1>Browse Files</h1>
+                                    <p>Drag and drop files here</p>
+                                </div>
+                                <input name="img" type="file" required>
+                                <div class="error">
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                    <div class="">This field is required.</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -109,16 +116,16 @@
                         <label class="form-label">Upload voice message</label> <br>
                         <div class="upload">
                             <div class="btn-warning">
-                            <div class="file-input-content">
-                                <i class="fa-solid fa-cloud-arrow-up"></i>
-                                <h1>Browse Files</h1>
-                                <p>Drag and drop files here</p>
-                            </div>
-                            <input name="voice" type="file" required>
-                            <div class="error">
-                                <i class="fa-solid fa-circle-exclamation"></i>
-                                <div class="">This field is required.</div>
-                            </div>
+                                <div class="file-input-content">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    <h1>Browse Files</h1>
+                                    <p>Drag and drop files here</p>
+                                </div>
+                                <input name="voice" type="file" required>
+                                <div class="error">
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                    <div class="">This field is required.</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -127,10 +134,10 @@
                     <button type="submit" class="btn-footer">Submit</button>
                 </div>
             </form>
-         </div>
+        </div>
     </section>
 
 
-    <script src="app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
