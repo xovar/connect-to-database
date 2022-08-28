@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .main{
     width: 100%;
     background: url(./sunset-hair.jpg);
@@ -23,6 +27,7 @@
     background-image: url(./uniqicon\ with\ new\ slogan\ 2\ no\ bg.63079eab03a4d9.22381436.png);
     background-size: contain;
     margin-top: 5px;
+    background-repeat: no-repeat;
 }
 
 /* form */
@@ -40,6 +45,7 @@
     color: white;
     padding: 40px 52px;
     border-bottom: 1px solid white;
+    margin-bottom: 30px;
 }
 
 .form-header h1{
@@ -187,4 +193,58 @@
 
 .error{
     display: none;
+}
+
+/* responsive */
+
+@media (max-width: 425px) {
+
+    .form-header h1{
+        width: 318px;
+    }
+    .form-group {
+        margin: 0px 0px 32px 2px;
+        padding: 0 16px;
+    }
+    .form-group .form-input {
+        width: 392px;
+    }
+    
+    
+}
+
+@media (max-width: 375px) {
+
+    .form-header h1{
+        width: 318px;
+    }
+    .form-group {
+        margin: 0px 0px 32px 2px;
+        padding: 0 2px;
+    }
+    .form-group .form-input {
+        width: 357px;
+    }
+    .form-header {
+        padding: 40px 27px;
+    }
+    
+}
+
+@media (max-width: 320px) {
+
+    .form-header h1{
+        width: 318px;
+    }
+    .form-group {
+        margin: 0px 0px 32px 2px;
+        padding: 0 2px;
+    }
+    .form-group .form-input {
+        width: 316px;
+    }
+    .form-header {
+        padding: 40px 0px;
+    }
+    
 }

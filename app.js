@@ -17,9 +17,6 @@ form.addEventListener("focusout", (e)=>{
 form.addEventListener("submit", (e) => {
     if(e.target.name.value == '' || e.target.email.value == '' || e.target.orderNumber.value == '' || e.target.purchase.value == '' || e.target.message.value == ''){
         e.preventDefault();
-        console.log(e.target.name.value, e.target.email.value, e.target.orderNumber.value, e.target.purchase.value, e.target.message.value);
-    }else{
-        console.log("Error");
     }
 
 })
