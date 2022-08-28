@@ -155,6 +155,8 @@
     color: white;
     padding: 40px 52px;
     border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
 }
 
 .form-footer .btn-footer{
@@ -164,6 +166,8 @@
     background: #894200;
     padding: 1px 6px;
     font-size: 16px;
+    cursor: pointer;
+    border: 0;
 }
 
 .error-show ~ .error{

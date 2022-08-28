@@ -1,7 +1,6 @@
 /* form validation */
 
 const form = document.querySelector("#form");
-let errorCount = 1;
 
 form.addEventListener("focusout", (e)=>{
     const formInput = e.target;
@@ -10,4 +9,17 @@ form.addEventListener("focusout", (e)=>{
     }else{
         formInput.classList.remove("error-show");
     }
+});
+
+
+/* form submit validation */
+
+form.addEventListener("submit", (e) => {
+    if(e.target.name.value == '' || e.target.email.value == '' || e.target.orderNumber.value == '' || e.target.purchase.value == '' || e.target.message.value == ''){
+        e.preventDefault();
+        console.log(e.target.name.value, e.target.email.value, e.target.orderNumber.value, e.target.purchase.value, e.target.message.value);
+    }else{
+        console.log("Error");
+    }
+
 })

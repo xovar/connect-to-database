@@ -28,37 +28,37 @@
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="name">Your Name</label> <br>
-                        <input class="form-input" type="text">
+                        <input class="form-input" name="name" type="text" required>
                         <div class="error">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <div class="">This field is requierd.</div>
+                            <div class="">This field is required.</div>
                         </div>
                     </div>
                 </div>
                 <div class="form-body">
                     <div class="form-group">
-                        <label class="form-label" for="name">Email</label> <br>
-                        <input class="form-input" type="email">
+                        <label class="form-label" for="email">Email</label> <br>
+                        <input class="form-input" name="email" type="email" required>
                         <div class="error">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <div class="">This field is requierd.</div>
+                            <div class="">This field is required.</div>
                         </div>
                     </div>
                 </div>
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="name">Your Order Number</label> <br>
-                        <input class="form-input" type="text">
+                        <input class="form-input" name="orderNumber" type="text" required>
                         <div class="error">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <div class="">This field is requierd.</div>
+                            <div class="">This field is required.</div>
                         </div>
                     </div>
                 </div>
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="name">Purchase from</label> <br>
-                        <select placeholder="Please select" name="" class="form-input">
+                        <select name="purchase" required placeholder="Please select" name="" class="form-input">
                             <option value="Please Select" selected disabled>Please Select</option>
                             <option value="Amazon">Amazon</option>
                             <option value="ebay">ebay</option>
@@ -68,7 +68,7 @@
                         </select>
                         <div class="error">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <div class="">This field is requierd.</div>
+                            <div class="">This field is required.</div>
                         </div>
                     </div>
                 </div>
@@ -78,10 +78,10 @@
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="name">Enter Text message</label> <br>
-                        <input class="form-input" type="text">
+                        <input name="message" class="form-input" type="text">
                         <div class="error">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <div class="">This field is requierd.</div>
+                            <div class="">This field is required.</div>
                         </div>
                     </div>
                 </div>
@@ -95,10 +95,10 @@
                                 <h1>Browse Files</h1>
                                 <p>Drag and drop files here</p>
                             </div>
-                            <input type="file">
+                            <input name="img" type="file" required>
                             <div class="error">
                                 <i class="fa-solid fa-circle-exclamation"></i>
-                                <div class="">This field is requierd.</div>
+                                <div class="">This field is required.</div>
                             </div>
                             </div>
                         </div>
@@ -114,10 +114,10 @@
                                 <h1>Browse Files</h1>
                                 <p>Drag and drop files here</p>
                             </div>
-                            <input type="file">
+                            <input name="voice" type="file" required>
                             <div class="error">
                                 <i class="fa-solid fa-circle-exclamation"></i>
-                                <div class="">This field is requierd.</div>
+                                <div class="">This field is required.</div>
                             </div>
                             </div>
                         </div>
