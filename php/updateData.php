@@ -52,5 +52,5 @@
 
         $sql = "UPDATE gift_data SET submission_date = '{$date}', email = '{$email}', message = '{$message}', voice = '{$voice_file}', gitf_img =  '{$img_file}', your_name = '{$name}', purchase_from = '{$purchase}' WHERE order_number = {$orderNumber}";
         $result = mysqli_query($conn, $sql);
-        header("Location: $hostname/voice/voice.html?id=$orderNumber");
+        header("Location: $hostname/voice/ordernumber.html?id=$orderNumber");
 ?>

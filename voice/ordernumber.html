@@ -30,7 +30,7 @@
         <div class="modal-body">
           <div>
             <div class="fb-share-button" data-href="https://uniqicon.com" data-layout="button" data-size="small">
-              <a class="icon" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://uniqicon.com" class="">
+              <a class="icon" id="facebook" target="_blank" href="" class="">
                 <i class="fab fa-facebook-square"></i>
                 <h1>Facebook</h1>
               </a>
@@ -38,13 +38,14 @@
           </div>
           <div>
             <a class="icon" class="twitter-share-button"
-              href="https://twitter.com/intent/tweet?text=https://uniqicon.com" target="_blank">
+              id="twitter"
+              href="" target="_blank">
               <i class="fab fa-twitter-square"></i>
               <h1>Twitter</h1>
            </a>
           </div>
           <div>
-            <a class="icon" href="whatsapp://send?text=https://uniqicon.com" 		data-action="share/whatsapp/share"
+            <a class="icon" id="whatsapp" href="" 		data-action="share/whatsapp/share"
 		        target="_blank">
             <i class="fab fa-whatsapp-square"></i>
             <h1>Whatsapp</h1>
@@ -52,17 +53,25 @@
             
           </div>
           <div>
-            <a class="icon" href="mailto:test@example.com?subject=uniqicon&body=https://uniqicon.com">
+            <a class="icon" id="email" href="mailto:test@example.com?subject=uniqicon&body=https://uniqicon.com">
               <i class="fas fa-envelope"></i>
               <h1>Email</h1>
             </a>
           </div>
           <div class="icon icon-custom">
             <i class="fas fa-comment-alt"></i>
-            <input id="url" type="text" value="https://uniqicon.com" readonly>
+            <input id="url" type="text" readonly>
             <button id="copy">copy</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- error  page -->
+    <div id="error-page">
+      <div class="error-content">
+        <img src="./404.jpg" width="500px" height="400px" alt="">
+        <h1>Order Number Is Invaild</h1>
       </div>
     </div>
 

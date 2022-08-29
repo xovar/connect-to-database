@@ -337,3 +337,22 @@ body{
     font-family: 'Roboto', sans-serif !important;
     text-align: center;
 }
+
+#error-page{
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    display: none;
+}
+
+#error-page .error-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#error-page .error-content h1{
+    font-size: 64px;
+    color: #CBE8E2;
+}
