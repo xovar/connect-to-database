@@ -1,7 +1,4 @@
-<?php
-    $conn = mysqli_connect("localhost", "root", "", "test") or die("Connection Failed");
-    $error = false;
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +24,7 @@
 
         <!-- form -->
         <div class="form-section">
-            <form id="form" method="post" action="./assets/php/updateData.php">
+            <form id="form" method="post" action="./php/updateData.php" enctype="multipart/form-data">
                 <div class="form-header">
                     <h1>Submit Your voice message</h1>
                 </div>
@@ -94,7 +91,7 @@
                 </div>
                 <div class="form-body">
                     <div class="form-group">
-                        <label class="form-label">Upload</label> <br>
+                        <label class="form-label">Upload Image</label> <br>
                         <div class="upload">
                             <div class="btn-warning">
                                 <div class="file-input-content">
