@@ -99,11 +99,21 @@
                                     <h1>Browse Files</h1>
                                     <p>Drag and drop files here</p>
                                 </div>
-                                <input name="img" type="file" required>
-                                <div class="error">
-                                    <i class="fa-solid fa-circle-exclamation"></i>
-                                    <div class="">This field is required.</div>
+                                <input name="img" id="img-file" type="file" required>
+                                <div class="error-img">
+                                    <i style="margin-left: 10px;" class="fa-solid fa-circle-exclamation"></i>
+                                    <div style="margin-left: 10px;" class="error-img-text"></div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="img-preview-section">
+                            <div class="img-section">
+                                <img style="object-fit: cover;" src="" class="img-preview" alt="">
+                                <p class="img-name"></p>
+                                <p class="img-size"></p>
+                            </div> 
+                            <div class="delete-section">
+                                <i class="fa-solid fa-trash-can img-delete"></i>
                             </div>
                         </div>
                     </div>
@@ -118,11 +128,23 @@
                                     <h1>Browse Files</h1>
                                     <p>Drag and drop files here</p>
                                 </div>
-                                <input name="voice" type="file" required>
-                                <div class="error">
-                                    <i class="fa-solid fa-circle-exclamation"></i>
-                                    <div class="">This field is required.</div>
+                                <input name="voice" id="voice-file" type="file" required>
+                                <div class="error-music">
+                                    <i style="margin-left: 10px;" class="fa-solid fa-circle-exclamation"></i>
+                                    <div style="margin-left: 10px;" class="error-music-text">database_voice_mess...(2).docx has invalid extension. Only mp3, wma, mpg, flv, avi are allowed.</div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="music-preview-section">
+                            <div class="music-section">
+                                <div style="width: 26; height: 26px; background-color: white; line-height: 26px; padding: 0 10px;">
+                                    <img  src="./assets/images/download.svg" class="music-preview" alt="">
+                                </div>
+                                <p class="music-name"></p>
+                                <p class="music-size"></p>
+                            </div> 
+                            <div class="delete-section">
+                                <i id="music-delete" class="fa-solid fa-trash-can"></i>
                             </div>
                         </div>
                     </div>

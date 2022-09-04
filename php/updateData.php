@@ -22,7 +22,7 @@
                 $file_tmp = $_FILES['img']['tmp_name'];
                 $file_ext = end(explode('.',$file_name));
 
-                $extensions = array("jpeg","jpg","png");
+                $extensions = array("jpg","jpeg","png","svg","gif");
 
                 if(in_array($file_ext,$extensions) === true){
                     $new_name = time(). "-".basename($file_name);
@@ -39,7 +39,7 @@
                 $voice_tmp = $_FILES['voice']['tmp_name'];
                 $voice_ext = end(explode('.',$voice_name));
 
-                $extensions_voice = array("mp3", "m4a", "wav");
+                $extensions_voice = array("mp3", "wma", "mpg", "flv", "avi");
 
                 if(in_array($voice_ext,$extensions_voice) === true){
                     $new_voice_name = time(). "-".basename($voice_name);
