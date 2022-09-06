@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <section class="main">
+    <section class="main order-section">
         <!-- header -->
         <div class="header">
             <div class="logo"></div>
@@ -26,6 +26,24 @@
         <div class="form-section">
             <form id="form" method="post" action="./php/updateData.php" enctype="multipart/form-data">
                 <div class="form-header">
+                    <h1>Submit your unique order number</h1>
+                </div>
+
+                <div class="form-body">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Order Number</label> <br>
+                        <input class="form-input" name="name" type="text" required>
+                        <div class="error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <div class="">This field is required.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" class="btn-footer">Submit</button>
+                </div>
+                <!-- <div class="form-header">
                     <h1>Submit Your voice message</h1>
                 </div>
 
@@ -151,7 +169,7 @@
                 </div>
                 <div class="form-footer">
                     <button type="submit" class="btn-footer">Submit</button>
-                </div>
+                </div> -->
             </form>
         </div>
     </section>

@@ -12,8 +12,8 @@ fetch(`../php/readData.php?id=${orderId}`, {
     console.log(data[0]);
     if(data[0].datafound !== "false"){
         /* music, name and image src */
-        const imgSrc = `./upload/img/${data[0].gitf_img}`;
-        const musicSrc = `./upload/music/${data[0].voice}`;
+        const imgSrc = `./upload/img/${data[0].image}`;
+        const musicSrc = `./upload/music/${data[0].voice_message_file}`;
         const avatarNameSrc = `${data[0].message}`;
 
         /* Avatar */

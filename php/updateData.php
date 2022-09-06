@@ -10,7 +10,7 @@
         $img_file = '';
         $voice_file = '';
 
-        $check_sql = "SELECT * FROM gift_data  WHERE order_number = {$orderNumber}";
+        $check_sql = "SELECT * FROM gift_data_table  WHERE order_number = {$orderNumber}";
 
         $checkResult = mysqli_query($conn, $check_sql);
         
@@ -50,7 +50,7 @@
             }
         }
 
-        $sql = "UPDATE gift_data SET submission_date = '{$date}', email = '{$email}', message = '{$message}', voice = '{$voice_file}', gitf_img =  '{$img_file}', your_name = '{$name}', purchase_from = '{$purchase}' WHERE order_number = {$orderNumber}";
+        $sql = "UPDATE gift_data_table SET datebase_created_date = '{$date}', email = '{$email}', enter_text_message = '{$message}', voice_message_file = '{$voice_file}', image =  '{$img_file}', your_name = '{$name}', purchase_from = '{$purchase}' WHERE order_number = {$orderNumber}";
         $result = mysqli_query($conn, $sql);
         header("Location: $hostname/voice/ordernumber.html?id=$orderNumber");
 ?>

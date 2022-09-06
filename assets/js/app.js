@@ -68,7 +68,6 @@ const musicName = document.querySelector(".music-name");
 const musicSize = document.querySelector(".music-size");
 
 musicInput.addEventListener("change", (e) =>{
-    console.log("working");
     const selectedFile = document.getElementById('voice-file').files[0];
     console.log(selectedFile.name);
     const types = ["mp3", "wma", "mpg", "flv", "avi"];
@@ -88,7 +87,7 @@ musicInput.addEventListener("change", (e) =>{
     }else{
         musicPreviewSection.style.visibility = "hidden";
         error.style.display = "flex";
-        errorText.innerText = `${selectedFile.name} has invalid extension. Only jpg, jpeg, png, gif are allowed.`;
+        errorText.innerText = `${selectedFile.name} has invalid extension. Only mp3, wma, mpg, flv, avi are allowed.`;
         fileInputError = 0;
     }
 })

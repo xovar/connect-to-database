@@ -3,7 +3,7 @@
 
     $id = $_GET['id'];
 
-    $sql = "SELECT * FROM gift_data  WHERE order_number = {$id}";
+    $sql = "SELECT * FROM gift_data_table  WHERE order_number = {$id}";
 
     $result = mysqli_query($conn, $sql);
 
