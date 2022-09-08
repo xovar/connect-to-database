@@ -14,7 +14,7 @@ fetch(`../php/readData.php?id=${orderId}`, {
         /* music, name and image src */
         const imgSrc = `./upload/img/${data[0].image}`;
         const musicSrc = `./upload/music/${data[0].voice_message_file}`;
-        const avatarNameSrc = `${data[0].message}`;
+        const avatarNameSrc = `${data[0].enter_text_message}`;
 
         /* Avatar */
         const avatar = document.querySelector(".avatar");

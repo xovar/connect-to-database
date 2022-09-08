@@ -47,10 +47,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-body">
+                <div class="form-body" style="display: none;">
                     <div class="form-group">
                         <label class="form-label" for="name">Your Order Number</label> <br>
-                        <input class="form-input" name="orderNumber" type="text" required>
+                        <input class="form-input" id="orderNumber" name="orderNumber" type="text" required>
                         <div class="error">
                             <i class="fa-solid fa-circle-exclamation"></i>
                             <div class="">This field is required.</div>
@@ -149,6 +149,7 @@
                 </div>
                 <div class="form-footer">
                     <button type="submit" class="btn-footer">Submit</button>
+                    <buttonss class="btn-footer">Submit</buttonss>
                 </div>
             </form>
         </div>

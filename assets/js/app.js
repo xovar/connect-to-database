@@ -110,6 +110,7 @@ form.addEventListener("submit", (e) => {
         submitBtn.style.cursor = "not-allowed"
     }else{
         submitBtn.style.cursor = "pointer";
+        
     }
 
     if(fileInputError == 0){
@@ -119,3 +120,18 @@ form.addEventListener("submit", (e) => {
         submitBtn.style.cursor = "pointer";
     }
 })
+
+/* get order number from localstorage */
+
+const codeNumber = JSON.parse(localStorage.getItem("orderNumber"));
+const orderInput = document.querySelector("#orderNumber");
+
+if(codeNumber?.orderNumber != ''){
+    orderInput.value = codeNumber?.orderNumber;
+    localStorage?.removeItem("orderNumber");
+    window?.localStorage?.key("orderNumber");
+}
+
+if(orderInput.value == 'undefined'){
+    window.location = "index.php";
+}

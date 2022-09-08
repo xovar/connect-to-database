@@ -405,6 +405,18 @@
             align-items: center;
 }
 
+/* order error */
+
+#order-error{
+    color: rgb(221, 28, 28); 
+    text-align: center; 
+    margin-top: 40px; 
+    font-size: 32px; 
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5); 
+    font-weight: 900;
+    display: none;
+}
+
 /* responsive */
 
 
