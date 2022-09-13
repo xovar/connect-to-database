@@ -70,7 +70,7 @@ const musicSize = document.querySelector(".music-size");
 musicInput.addEventListener("change", (e) =>{
     const selectedFile = document.getElementById('voice-file').files[0];
     console.log(selectedFile.name);
-    const types = ["mp3", "wma", "mpg", "flv", "avi"];
+    const types = ["mp3", "wma", "mpg", "flv", "avi", "webm"];
     const typeCheck = selectedFile.name.split(".")[1];
     const error = document.querySelector(".error-music");
     const errorText = document.querySelector(".error-music-text");
@@ -135,3 +135,38 @@ if(codeNumber?.orderNumber != ''){
 if(orderInput.value == 'undefined'){
     window.location = "index.php";
 }
+
+const test = document.getElementById("voice-file");
+
+test.addEventListener("change", e=>{
+    console.log(e);
+})
+
+
+/* audio recorder */
+
+/* const device = navigator.mediaDevices.getUserMedia({audio: true});
+    let items = [];
+    device.then(stream => {
+        const recorder = new MediaRecorder(stream);
+        recorder.ondataavailable = e=>{
+            items.push(e.data);
+            if(recorder.state == 'inactive'){
+                const blob = new Blob(items, {type: 'audio/webm'});
+                const audio = document.getElementById("recorded-file");
+                const mainAudio = document.createElement('audio');
+                mainAudio.setAttribute('controls', 'controls');
+                audio.appendChild(mainAudio);
+                mainAudio.innerHTML = '<source src="'+URL.createObjectURL(blob)+'" type="video/webm"/>'
+                document.getElementById("voice-file").files[0] = URL.createObjectURL(blob);
+            }
+        }
+        const recordIcon = document.querySelector("#record");
+
+        recordIcon.addEventListener("click", ()=>{
+            recorder.start(100);
+        })
+        setTimeout(()=>{
+            recorder.stop();
+        }, 5000);
+    }) */

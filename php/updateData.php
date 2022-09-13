@@ -39,7 +39,7 @@
                 $voice_tmp = $_FILES['voice']['tmp_name'];
                 $voice_ext = end(explode('.',$voice_name));
 
-                $extensions_voice = array("mp3", "wma", "mpg", "flv", "avi");
+                $extensions_voice = array("mp3", "wma", "mpg", "flv", "avi", "webm");
 
                 if(in_array($voice_ext,$extensions_voice) === true){
                     $new_voice_name = time(). "-".basename($voice_name);

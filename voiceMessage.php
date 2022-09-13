@@ -149,7 +149,6 @@
                 </div>
                 <div class="form-footer">
                     <button type="submit" class="btn-footer">Submit</button>
-                    <buttonss class="btn-footer">Submit</buttonss>
                 </div>
             </form>
         </div>
