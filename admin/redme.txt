@@ -1,0 +1,55 @@
+/*
+        ============================================
+                            read
+        ============================================
+        
+        fetch('./php/readData.php')
+        .then(res => res.json())
+        .then(data => {
+            data.map(data => {
+                const  table = `
+                    <tr>
+            <th scope="row">1 <i class="fa-regular fa-star"></i></th>
+            <td>{}</td>
+            <td>2022-09</td>
+            <td><input type="checkbox"></td>
+            <td></td>
+            <td><input type="checkbox"></td>
+            <td>sfas</td>
+            <td>@gmail</td>
+            <td>1221</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="purchase">amazon</span></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        
+                `
+            })
+        })
+
+        ); */
+
+       /*  ============================================
+                            create
+
+get method param is id look at the link set data after equal sign
+        ============================================ */
+
+        /* 
+        
+        fetch('./php/createData.php?id=54321',{
+            method: "GET",
+            headers: { "Content-Type" : "application/json"}
+        })
+        .then(res => res.json())
+        .then(data => console.log(data)); */
+
+        /* 
+        ============================================
+                            update
+        ============================================
+        */
