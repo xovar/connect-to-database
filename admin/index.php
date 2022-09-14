@@ -18,6 +18,7 @@
     <thead>
         <tr>
             <th scope="col"><input type="checkbox"></th>
+            <th></th>
             <th scope="col"><i class="fa-solid fa-calendar-days"></i> Database created date</th>
             <th scope="col"><i class="fa-solid fa-calendar-days"></i> User Draft submitted date</th>
             <th scope="col"><input type="checkbox"> User confirmed?</th>
@@ -37,6 +38,7 @@
     <tbody>
         <tr>
             <th scope="row">1 <i class="fa-regular fa-star"></i></th>
+            <td><button type="button" class="btn btn-outline-danger delBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
             <td>2022-009</td>
             <td>2022-09</td>
             <td><input type="checkbox"></td>
@@ -50,10 +52,11 @@
             <td></td>
             <td><span class="purchase">amazon</span></td>
             <td></td>
-            <td><button type="button" class="btn btn-outline btn-danger delBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
+            <td></td>
         </tr>
         <tr>
             <th scope="row"><i class="fa-solid fa-circle-plus"></i> ADD</th>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -77,7 +80,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Do yow want to delete this data?</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Do you want to delete this data?</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
