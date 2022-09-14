@@ -1,17 +1,17 @@
 .saerchBar{
-    width: 600px;
-    padding: 10px ;
+    width: 550px;
+    padding: 8px ;
 }
-.saerchBar button{
-    width: 100px;
+.saerch button{
+    width: 150px;
 }
 tr{
-    font-size: 10px;
+    font-size: 10.5px;
 }
 .purchase{
     background-color: #FBBF77;
 }
-.delBtn{
+.customBtn{
     font-size: 10px;
     padding: 2px 5px;
 }

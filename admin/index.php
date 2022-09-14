@@ -10,9 +10,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form class="d-flex saerchBar">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-primary" type="submit"><i class="fa-sharp fa-solid fa-filter"></i> filter</button>
+    <form class="saerchBar">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="search">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-filter"></i></button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
     </form>
     <table class="table table-striped table-bordered border-secondary">
     <thead>
@@ -48,7 +57,7 @@
       ?>
         <tr>
             <th scope="row">1 <i class="fa-regular fa-star"></i></th>
-            <td><button type="button" class="btn btn-outline-danger delBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
+            <td><button type="button" class="btn btn-outline-danger customBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
             <td><?php echo $row["datebase_created_ date"]?></td>
             <td><?php echo $row["user_draft_submitted_date"]?></td>
             <td><input type="checkbox"></td>
@@ -69,7 +78,7 @@
       }
         ?>
         <tr>
-            <th scope="row"><i class="fa-solid fa-circle-plus"></i> ADD</th>
+            <th scope="row"><button type="button" class="btn btn-outline-success customBtn" data-bs-toggle="modal" data-bs-target="#exampleModalAddBtn"><i class="fa-solid fa-circle-plus"></i> ADD</button></th>
             <td></td>
             <td></td>
             <td></td>
@@ -88,8 +97,7 @@
         </tr>
     </tbody>
     </table>
-    <!-- modal -->
-    <!-- Modal -->
+    <!-- Modal For delete button-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -97,12 +105,29 @@
         <h5 class="modal-title" id="exampleModalLabel">Do you want to delete this data?</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-danger">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Modal For addBtn-->
+<div class="modal fade" id="exampleModalAddBtn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Insert order number</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Input order number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger"><i class="fa-solid fa-circle-plus"></i> ADD</button>
       </div>
     </div>
   </div>
