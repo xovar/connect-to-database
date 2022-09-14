@@ -1,0 +1,13 @@
+.saerchBar{
+    width: 600px;
+    padding: 10px ;
+}
+.saerchBar button{
+    width: 100px;
+}
+tr{
+    font-size: 12px;
+}
+.purchase{
+    background-color: #FBBF77;
+}
