@@ -57,8 +57,8 @@
       ?>
         <tr>
             <th scope="row">1 <i class="fa-regular fa-star"></i></th>
-            <td><button type="button" class="btn btn-outline-danger customBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
-            <td><?php echo $row["datebase_created_ date"]?></td>
+            <td><button type="button" class="btn btn-outline-danger customBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id='<?php echo $row["order_number"];?>' onclick="deleteData(<?php echo $row['order_number'];?>)">Delete</button></td>
+            <td><?php echo $row["datebase_created_date"]?></td>
             <td><?php echo $row["user_draft_submitted_date"]?></td>
             <td><input type="checkbox"></td>
             <td></td>
@@ -107,7 +107,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-danger">Yes</button>
+        <button type="button" class="btn btn-danger" id="deleteBtn">Yes</button>
       </div>
     </div>
   </div>
@@ -122,12 +122,12 @@
       </div>
       <div class="modal-body">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Input order number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input id="orderNumberInput" type="text" class="form-control" placeholder="Insert order number" aria-label="Recipient's username" aria-describedby="basic-addon2">
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-danger"><i class="fa-solid fa-circle-plus"></i> ADD</button>
+        <button type="button" class="btn btn-danger" id="saveOrderNumber"><i class="fa-solid fa-circle-plus"></i> ADD</button>
       </div>
     </div>
   </div>
@@ -136,6 +136,6 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="../assets/js/adminTable.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
