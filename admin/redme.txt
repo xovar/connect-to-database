@@ -6,9 +6,9 @@
         fetch('./php/readData.php')
         .then(res => res.json())
         .then(data => {
-            data.map(data => {
+            data.map(data => { 
                 const  table = `
-                    <tr>
+        <tr>
             <th scope="row">1 <i class="fa-regular fa-star"></i></th>
             <td>{}</td>
             <td>2022-09</td>
@@ -26,7 +26,6 @@
             <td></td>
         </tr>
 
-        
                 `
             })
         })

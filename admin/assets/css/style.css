@@ -11,3 +11,7 @@ tr{
 .purchase{
     background-color: #FBBF77;
 }
+.delBtn{
+    font-size: 10px;
+    padding: 2px 5px;
+}
