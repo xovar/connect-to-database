@@ -10,6 +10,10 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="header mb-5 bg-success d-flex justify-content-between align-items-center">
+      <p class="text-white ms-4">UNIQICON</p>
+      <div class="me-4"><button class="btn btn-warning">Log Out</button></div>
+    </div>
     <form class="saerchBar">
         <div class="input-group mb-3">
             <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="search">
@@ -44,57 +48,8 @@
             <th scope="col"><i class="fa-solid fa-circle-plus"></i> ADD</th>
         </tr>
     </thead>
-    <tbody>
-      <?php
-        include './php/config.php';
-
-        $sql = "SELECT * FROM gift_data_table";
-
-        $result = mysqli_query($conn,$sql) or die("query failed");
-
-        if(mysqli_num_rows($result) > 0){
-          while($row = mysqli_fetch_assoc($result)){  
-      ?>
-        <tr>
-            <th scope="row">1 <i class="fa-regular fa-star"></i></th>
-            <td><button type="button" class="btn btn-outline-danger customBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id='<?php echo $row["order_number"];?>' onclick="deleteData(<?php echo $row['order_number'];?>)">Delete</button></td>
-            <td><?php echo $row["datebase_created_date"]?></td>
-            <td><?php echo $row["user_draft_submitted_date"]?></td>
-            <td><input type="checkbox"></td>
-            <td></td>
-            <td><input type="checkbox"></td>
-            <td><?php echo $row["your_name"]?></td>
-            <td><?php echo $row["email"]?></td>
-            <td><?php echo $row["order_number"]?></td>
-            <td><?php echo $row["enter_text_message"]?></td>
-            <td><?php echo $row["voice_message_file"]?></td>
-            <td><?php echo $row["image"]?></td>
-            <td><span class="purchase"><?php echo $row["purchase_from"]?></span></td>
-            <td><a href="#" onclick="qrCode(<?php echo $row['order_number'];?>)">Download</a></td>
-            <td></td>
-        </tr>
-        <?php
-        }
-      }
-        ?>
-        <tr>
-            <th scope="row"><button type="button" class="btn btn-outline-success customBtn" data-bs-toggle="modal" data-bs-target="#exampleModalAddBtn"><i class="fa-solid fa-circle-plus"></i> ADD</button></th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+    <tbody id="tbody">
+        
     </tbody>
     </table>
     <!-- Modal For delete button-->

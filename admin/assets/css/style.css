@@ -19,3 +19,7 @@ tr{
 #qrcode{
     display: none;
 }
+
+.header{
+    height: 10vh;
+}

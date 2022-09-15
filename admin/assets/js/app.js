@@ -9,7 +9,7 @@ saveBtn.addEventListener("click", () =>{
         headers: { "Content-Type" : "application/json"}
     })
     .then(res => res.json())
-    .then(data => console.log(data));
+    .then(data => readData());
 })
 
 
@@ -26,7 +26,7 @@ const deleteData = (data) =>{
             headers: { "Content-Type" : "application/json"}
             })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => readData())
     })
 }
 
@@ -54,4 +54,15 @@ const qrCode = (data) =>{
     makeQR(`http://localhost/project/voice/ordernumber.html?id=${data}`);
 }
 
+/* read data from database */
 
+const readData = () =>{
+    fetch('./php/readData.php')
+        .then(res => res.json())
+        .then(data => {
+            const tbody = document.querySelector("#tbody");
+            tbody.innerHTML = data.data;
+        })
+}
+
+readData();
