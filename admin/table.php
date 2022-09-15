@@ -1,3 +1,13 @@
+<?php
+  include './php/config.php';
+
+  session_start();
+  
+  if(!isset($_SESSION["admin"])){
+    header("Location: $hostname/admin/index.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +22,7 @@
 <body>
     <div class="header mb-5 bg-success d-flex justify-content-between align-items-center">
       <p class="text-white ms-4">UNIQICON</p>
-      <div class="me-4"><button class="btn btn-warning">Log Out</button></div>
+      <div class="me-4"><a href="./php/logout.php" class="btn btn-warning">Log Out</a></div>
     </div>
     <form class="saerchBar">
         <div class="input-group mb-3">
