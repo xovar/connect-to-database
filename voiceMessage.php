@@ -30,7 +30,7 @@
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="name">Your Name</label> <br>
-                        <input class="form-input" name="name" type="text" required>
+                        <input id="input-name" class="form-input" name="name" type="text" required>
                         <div class="error">
                             <i class="fa-solid fa-circle-exclamation"></i>
                             <div class="">This field is required.</div>
@@ -40,7 +40,7 @@
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="email">Email</label> <br>
-                        <input class="form-input" name="email" type="email" required>
+                        <input id="input-email" class="form-input" name="email" type="email" required>
                         <div class="error">
                             <i class="fa-solid fa-circle-exclamation"></i>
                             <div class="">This field is required.</div>
@@ -60,7 +60,7 @@
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="name">Purchase from</label> <br>
-                        <select name="purchase" required placeholder="Please select" name="" class="form-input">
+                        <select id="input-purchase" name="purchase" required placeholder="Please select" name="" class="form-input">
                             <option value="Please Select" selected disabled>Please Select</option>
                             <option value="Amazon">Amazon</option>
                             <option value="ebay">ebay</option>
@@ -80,7 +80,7 @@
                 <div class="form-body">
                     <div class="form-group">
                         <label class="form-label" for="name">Enter Text message</label> <br>
-                        <input name="message" class="form-input" type="text">
+                        <input id="input-message" name="message" class="form-input" type="text">
                         <div class="error">
                             <i class="fa-solid fa-circle-exclamation"></i>
                             <div class="">This field is required.</div>
@@ -148,7 +148,8 @@
                     </div>
                 </div>
                 <div class="form-footer">
-                    <button type="submit" class="btn-footer">Submit</button>
+                    <button type="submit" class="btn-footer">Save</button>
+                    <div id="preview" class="btn-footer">preview</div>
                 </div>
             </form>
         </div>
