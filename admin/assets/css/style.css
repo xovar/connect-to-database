@@ -15,3 +15,7 @@ tr{
     font-size: 10px;
     padding: 2px 5px;
 }
+
+#qrcode{
+    display: none;
+}
