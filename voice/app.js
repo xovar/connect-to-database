@@ -9,7 +9,6 @@ fetch(`../php/readData.php?id=${orderId}`, {
 })
 .then(res => res.json())
 .then(data => {
-    console.log(data[0]);
     if(data[0].datafound !== "false"){
         /* music, name and image src */
         const imgSrc = `./upload/img/${data[0].image}`;
@@ -193,7 +192,6 @@ const preview = () =>{
     fetch(`php/updateData.php?id=${orderId}`)
     .then(res => res.json())
     .then(data => {
-        console.log(data);
         if(data.data == 'true'){
             document.getElementById("saved").style.display = "block";
         }

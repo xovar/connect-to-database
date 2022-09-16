@@ -51,7 +51,7 @@ function downloadQR() {
   } 
 
 const qrCode = (data) =>{
-    makeQR(`http://localhost/project/voice/ordernumber.html?id=${data}`);
+    makeQR(`https://gift.uniqicon.com/project/voice/ordernumber.php?id=${data}`);
 }
 
 /* read data from database */

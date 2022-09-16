@@ -36,7 +36,6 @@ imgInput.addEventListener("change", (e) =>{
         error.style.display = "none";
         errorText.innerText = '';
         imgPreview.src = url;
-        console.log(selectedFile.name);
         imgName.innerText = selectedFile.name;
         const size = `${selectedFile.size / 1000}`;
         imgSize.innerText = `${size.split(".")[0]}Kb`;
@@ -69,7 +68,6 @@ const musicSize = document.querySelector(".music-size");
 
 musicInput.addEventListener("change", (e) =>{
     const selectedFile = document.getElementById('voice-file').files[0];
-    console.log(selectedFile.name);
     const types = ["mp3", "wma", "mpg", "flv", "avi", "webm"];
     const typeCheck = selectedFile.name.split(".")[1];
     const error = document.querySelector(".error-music");

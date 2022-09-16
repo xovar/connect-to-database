@@ -6,7 +6,7 @@ orderForm?.addEventListener("submit", (e) =>{
     e.preventDefault();
     const orderNumber = e.target.orderNumber.value;
     
-    fetch(`http://localhost/project/php/checkOrderNumber.php?orderNumber=${orderNumber}`, {
+    fetch(`https://gift.uniqicon.com/project/php/checkOrderNumber.php?orderNumber=${orderNumber}`, {
         method: "GET",
         headers: { "Content-Type" : "application/json"}
     })
