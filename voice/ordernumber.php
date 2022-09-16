@@ -118,6 +118,32 @@
             <a class="others-text" href="https://uniqicon.com">uniqicon.com</a>
         </div>
       </div>
+
+      <!-- check user confirm -->
+
+      <?php
+        include './php/config.php';
+        $order_number = $_GET["id"];
+        $sql = "SELECT * FROM gift_data_table WHERE order_number = '{$order_number}'";
+
+        $result = mysqli_query($conn,$sql) or die("query failed");
+
+        if(mysqli_num_rows($result) > 0){
+          while($row = mysqli_fetch_assoc($result)){
+            if($row["user_confirmed"] == 0){
+      ?>
+      <div style="margin-top: 80px; display: flex; justify-content: center;">
+        <button onclick="preview()" style="border: 3px solid #CBE8E2; background-color: white; width: 141px; height: 41px;cursor: pointer;">Save</button>
+      </div>
+      <?php
+            }
+          }
+        }
+      ?>
+
+      <div id="saved" style="margin-top: 40px; display: flex; justify-content: center; display: none;">
+        <div style="background-color: #CBE8E2; text-align: center; font-weight: 900; font-size: 32px;">Thank you! We will insert the message to the QR code together with the gift you have ordered! </div>
+      </div>
     </section>
 
 

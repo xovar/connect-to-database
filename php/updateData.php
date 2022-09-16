@@ -51,7 +51,7 @@
             }
         }
 
-        $sql = "UPDATE gift_data_table SET datebase_created_date = '{$date}', user_draft_submitted_date = '{$date}', email = '{$email}', enter_text_message = '{$message}', voice_message_file = '{$voice_file}', image =  '{$img_file}', client_ip_address = '{$ipaddress}', your_name = '{$name}', purchase_from = '{$purchase}', user_confirmed = 1, enabled = 1 WHERE order_number = {$orderNumber}";
+        $sql = "UPDATE gift_data_table SET user_draft_submitted_date = '{$date}', email = '{$email}', enter_text_message = '{$message}', voice_message_file = '{$voice_file}', image =  '{$img_file}', client_ip_address = '{$ipaddress}', your_name = '{$name}', purchase_from = '{$purchase}' WHERE order_number = {$orderNumber}";
         $result = mysqli_query($conn, $sql);
-        header("Location: $hostname/voice/ordernumber.html?id=$orderNumber");
+        header("Location: $hostname/voice/ordernumber.php?id=$orderNumber");
 ?>

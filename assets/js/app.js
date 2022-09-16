@@ -136,11 +136,6 @@ if(orderInput.value == 'undefined'){
     window.location = "index.php";
 }
 
-const test = document.getElementById("voice-file");
-
-test.addEventListener("change", e=>{
-    console.log(e);
-})
 
 
 /* audio recorder */

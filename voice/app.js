@@ -187,3 +187,15 @@ fetch(`../php/readData.php?id=${orderId}`, {
         })
     }
 });
+
+/* save preview data */
+const preview = () =>{
+    fetch(`php/updateData.php?id=${orderId}`)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+        if(data.data == 'true'){
+            document.getElementById("saved").style.display = "block";
+        }
+    })
+}

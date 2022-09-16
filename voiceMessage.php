@@ -148,8 +148,7 @@
                     </div>
                 </div>
                 <div class="form-footer">
-                    <button type="submit" class="btn-footer">Save</button>
-                    <div id="preview" class="btn-footer">preview</div>
+                    <button type="submit" class="btn-footer">preview</button>
                 </div>
             </form>
         </div>
