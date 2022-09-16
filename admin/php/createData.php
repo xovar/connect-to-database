@@ -3,8 +3,10 @@
 
     $order_number = $_GET["id"];
 
+    $date = date("m/d/Y");
 
-    $sql = "INSERT INTO `gift_data_table`(`order_number`)  VALUES ('{$order_number}')";
+
+    $sql = "INSERT INTO `gift_data_table`(`order_number`,`datebase_created_date`)  VALUES ('{$order_number}','{$date}')";
 
     $output = [];
 

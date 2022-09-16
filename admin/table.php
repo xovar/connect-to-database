@@ -41,7 +41,12 @@
     <thead>
         <tr>
             <th scope="col"><input type="checkbox"></th>
-            <th></th>
+            <?php
+              session_start();
+              if($_SESSION['admin'] == 1){
+                echo "<th></th>";
+              }
+            ?>
             <th scope="col"><i class="fa-solid fa-calendar-days"></i> Database created date</th>
             <th scope="col"><i class="fa-solid fa-calendar-days"></i> User Draft submitted date</th>
             <th scope="col"><input type="checkbox"> User confirmed?</th>

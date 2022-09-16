@@ -5,6 +5,9 @@
 
     $result = mysqli_query($conn, $sql);
 
+    session_start();
+
+
     $output = "";
     $count = 1;
 
@@ -14,13 +17,18 @@
             $output .= "
             <tr>
             <th scope='row'>{$count}<i class='fa-regular fa-star'></i></th>
-            <td>
-            <button 
-            type='button' 
-            class='btn btn-outline-danger customBtn' 
-            data-bs-toggle='modal' 
-            data-bs-target='#exampleModal' 
-            onclick='deleteData({$row['order_number']})'>Delete</button></td>";
+            ";
+
+            if($_SESSION['admin'] == 1){
+                $output .="
+                <td>
+                <button 
+                type='button' 
+                class='btn btn-outline-danger customBtn' 
+                data-bs-toggle='modal' 
+                data-bs-target='#exampleModal'
+                onclick='deleteData({$row['order_number']})'>Delete</button></td>";
+            }
 
             $output .= "
             <td>{$row['datebase_created_date']}</td>
